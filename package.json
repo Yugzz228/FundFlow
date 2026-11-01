@@ -1,0 +1,29 @@
+{
+  "name": "fundflow",
+  "version": "1.0.0",
+  "private": true,
+  "description": "FundFlow: A Decentralized Crowdfunding Platform with Milestone-Based Fund Release and Community Governance",
+  "scripts": {
+    "setup": "npm install && npm --prefix frontend install",
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "coverage": "hardhat coverage",
+    "chain": "hardhat node",
+    "accounts": "node scripts/accounts.js",
+    "deploy": "hardhat run scripts/deploy.ts --network localhost",
+    "seed": "hardhat run scripts/seed-demo.ts --network localhost",
+    "advance-time": "node scripts/advance-time.js",
+    "frontend": "npm --prefix frontend run dev",
+    "frontend:build": "npm --prefix frontend run build"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^6.1.2",
+    "@types/node": "^22.20.5",
+    "hardhat": "^2.29.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.6.1"
+  }
+}
